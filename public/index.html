@@ -6,24 +6,79 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+
+    <!-- FontAwesome import-->
+    <script src="https://kit.fontawesome.com/2d64613327.js" crossorigin="anonymous"></script>
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- Counter JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Compose Tweets JS -->
+    <script type="text/javascript" src="/scripts/compose-tweets.js"></script>
+
+    <!-- Responsive Web Design -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    
+    
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="nav-bar">
+      <div class="box">
+        <span class="title">Tweeter</span>
+      </div>
+      <div class="composeButton">
+        <span class="compose"><strong>Write</strong> a new tweet</span>
+        <div class="arrow bounce">
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+      </div>
     </nav>
+    <div class="container">
+      <header class="main-header">
+        <div class="image">
+          <img src="/images/profile-hex.png">
+        </div>
+        <br>
+        <div class="name">
+          <h2>Samir Parab</h2>
+        </div>
+      </header>
+      <main>
+        <section class="new-tweet">
+          <span class="error-message"></span>
+          <form id="tweet-form" action="/tweets" method="POST">
+            <textarea class="textarea" name="text" placeholder="What are you humming about?"></textarea>
+            <div class="controls">
+              <input id="tweet-button" class="button" type="submit" value="Tweet">
+              <span class="text">Characters Remaining</span>
+              <span class="counter">140</span>
+            </div>
+          </form>
+        </section>
+          <section id="tweet-container">
+        </section>
+        <button id="myBtn"><a href="#top" style="color: white"><i class="fas fa-angle-double-up"></i></a></button>
+      </main>
+    </div>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+
   </body>
 </html>

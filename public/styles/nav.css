@@ -1,0 +1,75 @@
+.nav-bar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  background-color: orange;
+  color: #FFFFFF;
+  padding: 1.5em;
+}
+
+.title {
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 40px;
+  z-index: auto;
+}
+
+.compose {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  z-index: auto;
+}
+
+.arrow {
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(223, 120, 42);
+}
+
+.box {
+  display: inline-block;
+}
+
+.composeButton {
+  display: inline-block;
+  float: right;
+}
+
+/* ----------------> Floating Back-To-Top Button */
+#myBtn {
+  position: fixed;
+  text-align: center;
+  float: right;
+  max-width: 90px;
+  height: 90px;
+  width: 100%;
+  font-size: 60px;
+  border-color: rgba(26, 2, 2, 0.2);
+  background-color: rgb(44, 63, 6);
+  margin: 10px;
+  border-radius: 70px;
+  display: block;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  visibility: 10%;
+}
+
+/* ----------------> On Hover Color Change*/
+#myBtn:hover {
+  background-color: red;
+  visibility: visible;
+}  
+
+/* ----------------> Desktop Layout */
+@media (min-width: 1024px) {
+  .nav-bar {
+    background-color: #4056A1;
+  }
+}
+
+
+
+
+ 

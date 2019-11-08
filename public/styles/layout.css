@@ -15,11 +15,33 @@ html {
  */
 
 body {
-  color: #545149;
+  color: #244751;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+main {
+  flex: 3;
+  width: 90%;
+  padding-top: 120px;
+  background-color: inherit;
+  color: #244751;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------> Desktop Layout */
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    margin: 20px;
+  }
+  main {
+    margin: 30px;
+  }
+}
