@@ -17,3 +17,9 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
+
+!["Screenshot of the tweeter page"](https://github.com/samirparab2019/tweeter/blob/master/docs/Tweeter-1.png)
+!["Screenshot of the Responsive design page"](https://github.com/samirparab2019/tweeter/blob/master/docs/Tweeter-responsinve-design.png)
+!["Screenshot of the tweeter toggle page"](https://github.com/samirparab2019/tweeter/blob/master/docs/Tweeter-toggle.png)
+!["Screenshot of the tweeter error message page"](https://github.com/samirparab2019/tweeter/blob/master/docs/tweeter-error.png)
+
